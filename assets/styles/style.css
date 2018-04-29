@@ -1,0 +1,32 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.top-bar {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.top-bar_blue {
+  background-color: #b3deff; }
+
+.top-bar__info {
+  width: 30%; }
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .info .info__elem {
+    color: #fff; }
+    .info .info__elem .icon::before {
+      font-weight: bold !important;
+      vertical-align: middle; }
+
+/*# sourceMappingURL=style.css.map */

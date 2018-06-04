@@ -5,6 +5,9 @@ a {
   text-decoration: none;
   color: black; }
 
+button {
+  outline: none; }
+
 .container {
   width: 80%;
   margin: 0 auto; }
@@ -16,6 +19,9 @@ a {
 
 .top-bar_blue {
   background-color: #00bfff; }
+
+.top-bar_dark-blue {
+  background-color: #6ea5d0; }
 
 .top-bar__info {
   width: 30%; }
@@ -31,6 +37,7 @@ a {
   .info .info__elem {
     color: #fff; }
     .info .info__elem .icon::before {
+      font-size: 1.1rem;
       font-weight: bold !important;
       vertical-align: middle; }
 
@@ -53,8 +60,139 @@ a {
   color: black;
   transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
   .menu.header__menu a:hover {
-    color: #00bfff;
-    border-color: #00bfff;
+    color: #6ea5d0;
+    border-color: #6ea5d0;
     transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+
+.fw-container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.hero {
+  position: relative;
+  height: 600px; }
+  .hero .hero__bg {
+    height: 100%;
+    filter: blur(3px);
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat; }
+  .hero .hero__title {
+    width: 100%;
+    position: absolute;
+    top: 28%;
+    text-align: center;
+    font-size: 2.75rem; }
+  .hero .hero__btn {
+    position: absolute;
+    top: 43%;
+    left: 40%;
+    font-size: 0.9375rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: 0;
+    padding: 0.65rem 0; }
+  .hero.hero-main .hero__bg {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards; }
+  .hero.hero-main .hero__title {
+    opacity: 0;
+    color: white;
+    animation-name: short-show-title-from-top;
+    animation-duration: 0.65s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards; }
+  .hero.hero-main .hero__btn {
+    opacity: 0;
+    width: 22%;
+    background-color: #6ea5d0;
+    color: #fff;
+    border-radius: 20px;
+    animation-name: short-show-title-from-bottom;
+    animation-duration: 0.65s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+    -webkit-transition: background-color 0.2s ease-in-out 0s;
+    -moz-transition: background-color 0.2s ease-in-out 0s;
+    -o-transition: background-color 0.2s ease-in-out 0s;
+    transition: background-color 0.2s ease-in-out 0s; }
+    .hero.hero-main .hero__btn:hover {
+      background-color: #09516f;
+      -webkit-transition: background-color 0.2s ease-in-out 0s;
+      -moz-transition: background-color 0.2s ease-in-out 0s;
+      -o-transition: background-color 0.2s ease-in-out 0s;
+      transition: background-color 0.2s ease-in-out 0s; }
+
+section {
+  width: 100%;
+  margin: 0 auto; }
+  section.narrowed {
+    max-width: 1170px; }
+  section .section__title {
+    padding-top: 2.5rem;
+    margin-bottom: 3.5rem;
+    font-size: 2.75rem;
+    text-align: center; }
+
+.services .services__elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .services .services__elements .services__element {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 2.5rem; }
+    .services .services__elements .services__element.animated {
+      animation-name: fade-in;
+      animation-duration: 0.8s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s;
+      animation-fill-mode: forwards; }
+    .services .services__elements .services__element .services__element-icon {
+      font-size: 2rem; }
+    .services .services__elements .services__element .services__element-title {
+      font-size: 1.35rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem; }
+    .services .services__elements .services__element .services__element-text {
+      font-size: 1rem;
+      font-weight: 100; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .footer .footer__logo {
+    width: 10%; }
+
+/** Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes short-show-title-from-top {
+  from {
+    top: 20%;
+    opacity: 0; }
+  to {
+    top: 28%;
+    opacity: 1; } }
+@keyframes short-show-title-from-bottom {
+  from {
+    top: 51%;
+    opacity: 0; }
+  to {
+    top: 43%;
+    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */

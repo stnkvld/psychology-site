@@ -15,7 +15,7 @@
 
     <header class="header" role="banner">
 
-        <div class="top-bar header__top-bar top-bar_blue">
+        <div class="top-bar header__top-bar top-bar_dark-blue">
             <div class="container">
                 <div class="info top-bar__info">
                     <a href="#" class="info__elem info__phone">

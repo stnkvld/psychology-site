@@ -28,4 +28,9 @@ $options = array(
 		'desc'  => __('', 'fw'),
 		'type' => 'text'
 	),
+	'btn-shortcode' => array(
+		'label' => __('Шорткод кнопки для FormCraft', 'fw'),
+		'desc'  => __('', 'fw'),
+		'type' => 'text'
+	),
 );

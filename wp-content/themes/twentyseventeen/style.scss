@@ -141,10 +141,13 @@ button {
         font-size: 2.75rem;
     }
 
-    .hero__btn {
+    .hero__btn-wrapper {
         position: absolute;
         top: 43%;
-        left: 40%;
+        left: calc(50% - 10rem);
+    }
+
+    .hero__btn {
         font-size: 0.9375rem;
         font-weight: 100;
         text-transform: uppercase;
@@ -164,13 +167,19 @@ button {
             @include animated(short-show-title-from-top, 0.65s, ease-in-out, 1.3s, forwards);
         }
 
-        .hero__btn {
+        .hero__btn-wrapper {
             opacity: 0;
-            width: 22%;
+            cursor: pointer;
+            @include animated(short-show-title-from-bottom, 0.65s, ease-in-out, 1.3s, forwards);
+        }
+
+        .hero__btn {
+            display: inline-block;
+            width: 20rem;
             background-color: #6ea5d0;
             color: #fff;
+            text-align: center;
             border-radius: 20px;
-            @include animated(short-show-title-from-bottom, 0.65s, ease-in-out, 1.3s, forwards);
             @include transitioned(background-color, 0.2s, ease-in-out, 0s);
 
             &:hover {

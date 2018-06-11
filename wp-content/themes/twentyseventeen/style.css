@@ -83,10 +83,11 @@ button {
     top: 28%;
     text-align: center;
     font-size: 2.75rem; }
-  .hero .hero__btn {
+  .hero .hero__btn-wrapper {
     position: absolute;
     top: 43%;
-    left: 40%;
+    left: calc(50% - 10rem); }
+  .hero .hero__btn {
     font-size: 0.9375rem;
     font-weight: 100;
     text-transform: uppercase;
@@ -107,17 +108,21 @@ button {
     animation-timing-function: ease-in-out;
     animation-delay: 1.3s;
     animation-fill-mode: forwards; }
-  .hero.hero-main .hero__btn {
+  .hero.hero-main .hero__btn-wrapper {
     opacity: 0;
-    width: 22%;
-    background-color: #6ea5d0;
-    color: #fff;
-    border-radius: 20px;
+    cursor: pointer;
     animation-name: short-show-title-from-bottom;
     animation-duration: 0.65s;
     animation-timing-function: ease-in-out;
     animation-delay: 1.3s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  .hero.hero-main .hero__btn {
+    display: inline-block;
+    width: 20rem;
+    background-color: #6ea5d0;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
     -webkit-transition: background-color 0.2s ease-in-out 0s;
     -moz-transition: background-color 0.2s ease-in-out 0s;
     -o-transition: background-color 0.2s ease-in-out 0s;

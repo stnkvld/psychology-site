@@ -20,61 +20,63 @@
         ?>
 
         <section class="services narrowed">
-            <h2 class="services__title section__title">Услуги</h2>
-            <div class="services__elements">
-                <div class="services__element">
-                    <div class="services__element-icon">
-                        <span class="icon icon-basic-smartphone"></span>
+            <div class="container">
+                <h2 class="services__title section__title">Основные направления консультирования</h2>
+                <div class="services__elements">
+                    <div class="services__element">
+                        <div class="services__element-icon">
+                            <span class="icon icon-basic-smartphone"></span>
+                        </div>
+                        <h3 class="services__element-title">Услуга 1</h3>
+                        <p class="services__element-text">
+                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
+                        </p>
                     </div>
-                    <h3 class="services__element-title">Услуга 1</h3>
-                    <p class="services__element-text">
-                        После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                    </p>
-                </div>
-                <div class="services__element">
-                    <div class="services__element-icon">
-                        <span class="icon icon-basic-smartphone"></span>
+                    <div class="services__element">
+                        <div class="services__element-icon">
+                            <span class="icon icon-basic-smartphone"></span>
+                        </div>
+                        <h3 class="services__element-title">Услуга 1</h3>
+                        <p class="services__element-text">
+                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
+                        </p>
                     </div>
-                    <h3 class="services__element-title">Услуга 1</h3>
-                    <p class="services__element-text">
-                        После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                    </p>
-                </div>
-                <div class="services__element">
-                    <div class="services__element-icon">
-                        <span class="icon icon-basic-smartphone"></span>
+                    <div class="services__element">
+                        <div class="services__element-icon">
+                            <span class="icon icon-basic-smartphone"></span>
+                        </div>
+                        <h3 class="services__element-title">Услуга 1</h3>
+                        <p class="services__element-text">
+                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
+                        </p>
                     </div>
-                    <h3 class="services__element-title">Услуга 1</h3>
-                    <p class="services__element-text">
-                        После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                    </p>
-                </div>
-                <div class="services__element">
-                    <div class="services__element-icon">
-                        <span class="icon icon-basic-smartphone"></span>
+                    <div class="services__element">
+                        <div class="services__element-icon">
+                            <span class="icon icon-basic-smartphone"></span>
+                        </div>
+                        <h3 class="services__element-title">Услуга 1</h3>
+                        <p class="services__element-text">
+                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
+                        </p>
                     </div>
-                    <h3 class="services__element-title">Услуга 1</h3>
-                    <p class="services__element-text">
-                        После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                    </p>
-                </div>
-                <div class="services__element">
-                    <div class="services__element-icon">
-                        <span class="icon icon-basic-smartphone"></span>
+                    <div class="services__element">
+                        <div class="services__element-icon">
+                            <span class="icon icon-basic-smartphone"></span>
+                        </div>
+                        <h3 class="services__element-title">Услуга 1</h3>
+                        <p class="services__element-text">
+                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
+                        </p>
                     </div>
-                    <h3 class="services__element-title">Услуга 1</h3>
-                    <p class="services__element-text">
-                        После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                    </p>
-                </div>
-                <div class="services__element">
-                    <div class="services__element-icon">
-                        <span class="icon icon-basic-smartphone"></span>
+                    <div class="services__element">
+                        <div class="services__element-icon">
+                            <span class="icon icon-basic-smartphone"></span>
+                        </div>
+                        <h3 class="services__element-title">Услуга 1</h3>
+                        <p class="services__element-text">
+                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
+                        </p>
                     </div>
-                    <h3 class="services__element-title">Услуга 1</h3>
-                    <p class="services__element-text">
-                        После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                    </p>
                 </div>
             </div>
         </section>

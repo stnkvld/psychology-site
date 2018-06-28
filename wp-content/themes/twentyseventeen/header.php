@@ -36,10 +36,12 @@
                 </div>
                 <nav class="menu header__menu">
                     <a href="#">Главная</a>
-                    <a href="#">Сертификаты</a>
+                    <a href="#">Образование</a>
                     <a href="#">Блог</a>
                     <a href="#">Услуги</a>
                     <a href="#">Контакты</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Отзывы</a>
                 </nav>
             </div>
         </div>

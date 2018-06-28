@@ -11,6 +11,13 @@ $info-text-color: #fff;
     align-items: center;
 }
 
+@mixin gridable($gridTemplateColumns, $gridGap, $alignItems) {
+    display: grid;
+    grid-template-columns: $gridTemplateColumns;
+    grid-gap: $gridGap;
+    align-items: $alignItems;
+}
+
 @mixin transitioned($prop, $duration, $timing-func, $delay) {
     -webkit-transition: $prop $duration $timing-func $delay;
     -moz-transition: $prop $duration $timing-func $delay;
@@ -194,14 +201,11 @@ section {
     width: 100%;
     margin: 0 auto;
 
-    &.narrowed {
-        max-width: 1170px;
-    }
-
     .section__title {
         padding-top: 2.5rem;
         margin-bottom: 3.5rem;
         font-size: 2.75rem;
+        font-weight: 600;
         text-align: center;
     }
 }
@@ -235,6 +239,21 @@ section {
                 font-size: 1rem;
                 font-weight: 100;
             }
+        }
+    }
+}
+
+.about-me {
+    .about-me__content {
+        @include gridable(13rem 1fr, 2em, center);
+
+        .photo-with-text {
+            width: 13rem;
+            height: 13rem;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 50%;
         }
     }
 }

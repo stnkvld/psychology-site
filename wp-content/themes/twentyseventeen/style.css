@@ -137,12 +137,11 @@ button {
 section {
   width: 100%;
   margin: 0 auto; }
-  section.narrowed {
-    max-width: 1170px; }
   section .section__title {
     padding-top: 2.5rem;
     margin-bottom: 3.5rem;
     font-size: 2.75rem;
+    font-weight: 600;
     text-align: center; }
 
 .services .services__elements {
@@ -170,6 +169,19 @@ section {
     .services .services__elements .services__element .services__element-text {
       font-size: 1rem;
       font-weight: 100; }
+
+.about-me .about-me__content {
+  display: grid;
+  grid-template-columns: 13rem 1fr;
+  grid-gap: 2em;
+  align-items: center; }
+  .about-me .about-me__content .photo-with-text {
+    width: 13rem;
+    height: 13rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%; }
 
 .footer {
   display: flex;

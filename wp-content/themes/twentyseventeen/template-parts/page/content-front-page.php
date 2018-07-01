@@ -19,68 +19,22 @@
             ) );
         ?>
 
-        <section class="services narrowed">
+        <section class="result colored blue">
             <div class="container">
-                <h2 class="services__title section__title">Основные направления консультирования</h2>
-                <div class="services__elements">
-                    <div class="services__element">
-                        <div class="services__element-icon">
-                            <span class="icon icon-basic-smartphone"></span>
-                        </div>
-                        <h3 class="services__element-title">Услуга 1</h3>
-                        <p class="services__element-text">
-                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                        </p>
-                    </div>
-                    <div class="services__element">
-                        <div class="services__element-icon">
-                            <span class="icon icon-basic-smartphone"></span>
-                        </div>
-                        <h3 class="services__element-title">Услуга 1</h3>
-                        <p class="services__element-text">
-                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                        </p>
-                    </div>
-                    <div class="services__element">
-                        <div class="services__element-icon">
-                            <span class="icon icon-basic-smartphone"></span>
-                        </div>
-                        <h3 class="services__element-title">Услуга 1</h3>
-                        <p class="services__element-text">
-                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                        </p>
-                    </div>
-                    <div class="services__element">
-                        <div class="services__element-icon">
-                            <span class="icon icon-basic-smartphone"></span>
-                        </div>
-                        <h3 class="services__element-title">Услуга 1</h3>
-                        <p class="services__element-text">
-                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                        </p>
-                    </div>
-                    <div class="services__element">
-                        <div class="services__element-icon">
-                            <span class="icon icon-basic-smartphone"></span>
-                        </div>
-                        <h3 class="services__element-title">Услуга 1</h3>
-                        <p class="services__element-text">
-                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                        </p>
-                    </div>
-                    <div class="services__element">
-                        <div class="services__element-icon">
-                            <span class="icon icon-basic-smartphone"></span>
-                        </div>
-                        <h3 class="services__element-title">Услуга 1</h3>
-                        <p class="services__element-text">
-                            После того, как вы оставили автомобиль на нашей крытой парковке и, возможно, уже упаковали багаж с помощью наших сотрудников, мы доставим вас в аэропорт.
-                        </p>
-                    </div>
+                <h2 class="result__title section__title">Итог</h2>
+                <div class="result__text">
+                    В результате консультаций и прохождении индивидуальных и групповых курсов с психологом и лайф коучем Инной Сотниковой вы сможете:
                 </div>
+                <ul class="result__list">
+                    <li>Научиться управлять собой и своими состояниями</li>
+                    <li>Выявить и убрать ваши ограничивающие убеждения, страхи, комплексы, которые    мешают успешно достигать поставленных целей</li>
+                    <li>Определите Ваши индивидуальные особенности, а также научитесь использовать свои ресурсы и природный потенциал себе на благо с максимальной эффективностью</li>
+                    <li>Овладеете основами саморегуляции и научитесь успешно справляться со стрессами и тревожными состояниями</li>
+                    <li>Осознаете и исцелите психологические травмы, мешающие вашей эффективности</li>
+                    <li>Сможете эффективно взаимодействовать в отношениях, научитесь выходить из зависимых отношений и не вступать в отношения, которые Вам не нужны</li>
+                    <li>Научитесь четко определять свои цели и выстраивать наиболее оптимальный путь к успеху в любых задуманных областях и сделать вашу жизнь более гармоничной и осмысленной</li>
+                    <li>Стать самому себе психологом и уметь справляться с трудностями психологического характера самостоятельно в экстренных ситуациях</li>
+                </ul>
             </div>
-        </section>
-        <section class="advantages">
-            <h2 class="advantages__title section__title">Преимущества</h2>
         </section>
     </div>

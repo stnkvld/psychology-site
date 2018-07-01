@@ -11,6 +11,11 @@ $info-text-color: #fff;
     align-items: center;
 }
 
+@mixin flexible-column() {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin gridable($gridTemplateColumns, $gridGap, $alignItems) {
     display: grid;
     grid-template-columns: $gridTemplateColumns;
@@ -53,8 +58,8 @@ button {
 
 .top-bar {
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem
+    padding-top: 1em;
+    padding-bottom: 1em
 }
 
 .top-bar_blue {
@@ -99,8 +104,8 @@ button {
     a {
         display: inline-block;
         border-bottom: 0.25rem solid transparent;
-        padding: 0.5rem 0;
-        margin: 0 1.2rem;
+        padding: 0.5em 0;
+        margin: 0 1.2em;
 
         &:last-child {
             margin-right: 0;
@@ -159,7 +164,7 @@ button {
         font-weight: 100;
         text-transform: uppercase;
         border: 0;
-        padding: 0.65rem 0;
+        padding: 0.65em 0;
     }
 
     &.hero-main {
@@ -202,8 +207,8 @@ section {
     margin: 0 auto;
 
     .section__title {
-        padding-top: 2.5rem;
-        margin-bottom: 3.5rem;
+        padding-top: 1em;
+        margin-bottom: 1.5em;
         font-size: 2.75rem;
         font-weight: 600;
         text-align: center;
@@ -212,14 +217,29 @@ section {
 
 .services {
     .services__elements {
-        @include flexible-row();
         flex-wrap: wrap;
 
+        &.horizontal {
+            @include flexible-row();
+
+            .services__element {
+                width: 30%;
+            }
+        }
+
+        &.vertical {
+            width: 80%;
+            margin: 0 auto;
+            @include flexible-column();
+
+            .services__element {
+                width: 100%;
+            }
+        }
+
         .services__element {
-            //opacity: 0;
-            width: 30%;
             text-align: center;
-            margin-bottom: 2.5rem;
+            margin-bottom: 5em;
 
             &.animated {
                 @include animated(fade-in, 0.8s, ease-in-out, 0s, forwards);
@@ -230,13 +250,18 @@ section {
             }
 
             .services__element-title {
-                font-size: 1.35rem;
-                margin-top: 0.5rem;
-                margin-bottom: 1rem;
+                width: 55%;
+                margin: 0 auto;
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: $dark-blue;
+                margin-top: 0.5em;
+                margin-bottom: 1em;
             }
 
             .services__element-text {
-                font-size: 1rem;
+                font-size: 1.1rem;
+                line-height: 1.8rem;
                 font-weight: 100;
             }
         }
@@ -254,6 +279,53 @@ section {
             background-position: center;
             background-repeat: no-repeat;
             border-radius: 50%;
+        }
+    }
+}
+
+.result {
+    padding-bottom: 5em;
+
+    &.colored {
+        &.blue {
+            background-color: $dark-blue;
+
+            .result__title {
+                color: white;
+            }
+
+            .result__text {
+                color: white;
+            }
+
+            .result__list {
+
+                li {
+                    font-size: 1.125rem;
+                    line-height: 1.65rem;
+                    font-weight: 200;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .result__title {
+        margin-bottom: 0.5em;
+    }
+
+    .result__text {
+        width: 65%;
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 auto 3.5em auto;
+    }
+
+    .result__list {
+
+        li {
+            margin-bottom: 1em;
         }
     }
 }

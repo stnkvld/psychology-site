@@ -225,6 +225,16 @@ section {
             .services__element {
                 width: 30%;
             }
+
+            &.row-4 {
+                .services__element {
+                    width: 24%;
+
+                    .services__element-icon img {
+                        width: 6rem;
+                    }
+                }
+            }
         }
 
         &.vertical {
@@ -261,7 +271,7 @@ section {
 
             .services__element-text {
                 font-size: 1.1rem;
-                line-height: 1.8rem;
+                line-height: 1.7em;
                 font-weight: 100;
             }
         }
@@ -301,9 +311,6 @@ section {
             .result__list {
 
                 li {
-                    font-size: 1.125rem;
-                    line-height: 1.65rem;
-                    font-weight: 200;
                     color: white;
                 }
             }
@@ -317,6 +324,7 @@ section {
     .result__text {
         width: 65%;
         font-size: 1.25rem;
+        line-height: 1.8em;
         font-weight: 400;
         text-align: center;
         margin: 0 auto 3.5em auto;
@@ -325,9 +333,20 @@ section {
     .result__list {
 
         li {
+            font-size: 1.125rem;
+            line-height: 1.5em;
+            font-weight: 200;
             margin-bottom: 1em;
         }
     }
+}
+
+.seo-text {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2em;
 }
 
 .footer {

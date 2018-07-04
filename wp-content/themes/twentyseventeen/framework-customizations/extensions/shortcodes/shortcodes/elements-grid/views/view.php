@@ -3,10 +3,10 @@
 }
 ?>
 
-<section class="services">
+<section class="services <?= $atts['unique_class'] ?>"">
     <div class="container">
         <h2 class="services__title section__title"><?= $atts['title'] ?></h2>
-        <div class="services__elements <?= $atts['type'] ?> <?= $atts['unique_class'] ?>">
+        <div class="services__elements <?= $atts['type'] ?>">
             <?php foreach ($atts['elements'] as $element): ?>
 
                     <div class="services__element">

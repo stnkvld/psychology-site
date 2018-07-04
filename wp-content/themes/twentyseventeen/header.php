@@ -34,15 +34,14 @@
                 <div class="logo header__logo">
                     <img src="<?= get_template_directory_uri(); ?>/assets/images/logo.jpg">
                 </div>
-                <nav class="menu header__menu">
-                    <a href="#">Главная</a>
-                    <a href="#">Образование</a>
-                    <a href="#">Блог</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Контакты</a>
-                    <a href="#">Цены</a>
-                    <a href="#">Отзывы</a>
-                </nav>
+                <?php
+                    wp_nav_menu( array(
+                        'menu'            => 'Основное меню',
+                        'fallback_cb'     => '__return_empty_string',
+                        'items_wrap'      => '<ul class="menu header__menu">%3$s</ul>',
+                        'depth'           => 0
+                    ) );
+                ?>
             </div>
         </div>
 

@@ -15,7 +15,7 @@
 
     <header class="header" role="banner">
 
-        <div class="top-bar header__top-bar top-bar_dark-blue">
+        <div class="top-bar header__top-bar dark-blue">
             <div class="container">
                 <div class="info top-bar__info">
                     <a href="#" class="info__elem info__phone">
@@ -42,6 +42,16 @@
                         'depth'           => 0
                     ) );
                 ?>
+            </div>
+        </div>
+        <div class="mobile-menu header__mobile-menu dark-blue">
+            <div class="container">
+                <div class="logo header__logo">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/images/logo.jpg">
+                </div>
+                <div class="mobile-menu__caller">
+                    <span class="icon icon-hamburger"></span>
+                </div>
             </div>
         </div>
 

@@ -15,27 +15,19 @@
 
     <header class="header" role="banner">
 
-        <div class="top-bar header__top-bar dark-blue">
-            <div class="container">
-                <div class="info top-bar__info">
-                    <a href="#" class="info__elem info__phone">
-                        <span class="icon icon-basic-smartphone"></span>
-                        +7 (999) 215-47-76
-                    </a>
-                    <a href="#" class="info__elem info__email">
-                        <span class="icon icon-basic-mail"></span>
-                        stnkvld@gmail.com
-                    </a>
-                </div>
-            </div>
-        </div>
         <div class="main-bar header__main-bar">
             <div class="container">
-                <div class="logo header__logo">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/images/logo.jpg">
-                </div>
+                <?php if ( is_front_page() ): ?>
+                    <a class="logo header__logo" href="/">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/images/logo.jpg">
+                    </a>
+                <?php else: ?>
+                    <div class="logo header__logo">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/images/logo.jpg">
+                    </div>
+                <?php endif; ?>
                 <?php
-                    wp_nav_menu( array(
+                    wp_nav_menu_extended( array(
                         'menu'            => 'Основное меню',
                         'fallback_cb'     => '__return_empty_string',
                         'items_wrap'      => '<ul class="menu header__menu">%3$s</ul>',
@@ -44,16 +36,16 @@
                 ?>
             </div>
         </div>
-        <div class="mobile-menu header__mobile-menu dark-blue">
-            <div class="container">
-                <div class="logo header__logo">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/images/logo.jpg">
-                </div>
-                <div class="mobile-menu__caller">
-                    <span class="icon icon-hamburger"></span>
-                </div>
-            </div>
-        </div>
+<!--        <div class="mobile-menu header__mobile-menu dark-blue">-->
+<!--            <div class="container">-->
+<!--                <div class="logo header__logo">-->
+<!--                    <img src="--><?//= get_template_directory_uri(); ?><!--/assets/images/logo.jpg">-->
+<!--                </div>-->
+<!--                <div class="mobile-menu__caller">-->
+<!--                    <span class="icon icon-hamburger"></span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
     </header>
 

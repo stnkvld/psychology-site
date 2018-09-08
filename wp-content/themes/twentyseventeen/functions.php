@@ -584,3 +584,53 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+function wp_nav_menu_extended($args = array()) {
+	$_echo = array_key_exists('echo', $args) ? $args['echo'] : true;
+	$args['echo'] = false;
+
+	$menu = wp_nav_menu($args);
+
+	// Load menu as xml
+	$menu = simplexml_load_string($menu);
+
+	// Find current menu item with xpath selector
+	if (array_key_exists('xpath', $args)) {
+		$xpath = $args['xpath'];
+	} else {
+		$xpath = '//li[contains(@class, "current-menu-item") or contains(@class, "current_page_item")]';
+	}
+
+	$current = $menu->xpath($xpath);
+
+	// If current item exists
+	if (!empty($current)) {
+		$text_node = (string) $current[0]->children();
+
+		// Remove link
+		unset($current[0]->a);
+
+		// Create required element with text from link
+		$element_name = $args['replace_a_by'] ? $args['replace_a_by'] : 'span';
+
+		$dom = dom_import_simplexml($current[0]);
+		$n = $dom->insertBefore(
+			$dom->ownerDocument->createElement($element_name, $text_node),
+			$dom->firstChild
+		);
+
+		$current[0] = simplexml_import_dom($n);
+	}
+
+	$xml_doc = new DOMDocument('1.0', 'utf-8');
+	$menu_x = $xml_doc->importNode(dom_import_simplexml($menu), true);
+	$xml_doc->appendChild($menu_x);
+
+	$menu = $xml_doc->saveXML($xml_doc->documentElement);
+
+	if ($_echo) {
+		echo $menu;
+	} else {
+		return $menu;
+	}
+}
